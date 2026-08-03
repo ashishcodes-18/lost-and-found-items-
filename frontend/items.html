@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Items | Lost & Found Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <div class="logo">
+                Lost<span>&</span>Found
+            </div>
+
+            <nav>
+
+                <a href="index.html">Home</a>
+
+                <a href="items.html" class="active">
+                    Browse Items
+                </a>
+
+                <a href="report-lost.html">
+                    Report Lost
+                </a>
+
+                <a href="report-found.html">
+                    Report Found
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <section class="items-section">
+
+            <div class="container">
+
+                <!-- Page Heading -->
+
+                <div class="items-header">
+
+                    <h1>
+                        Browse Lost & Found Items
+                    </h1>
+
+                    <p>
+                        Search and filter items reported by students and community members.
+                    </p>
+
+                </div>
+
+
+                <!-- ================= SEARCH ================= -->
+
+                <div class="items-search">
+
+                    <input
+                        type="text"
+                        id="itemSearch"
+                        placeholder="Search by item name, location or description..."
+                    >
+
+                    <button id="searchButton">
+                        Search
+                    </button>
+
+                </div>
+
+
+                <!-- ================= FILTERS ================= -->
+
+                <div class="filters">
+
+                    <div class="filter-group">
+
+                        <label for="statusFilter">
+                            Status
+                        </label>
+
+                        <select id="statusFilter">
+
+                            <option value="all">All</option>
+
+                            <option value="lost">Lost</option>
+
+                            <option value="found">Found</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="categoryFilter">
+                            Category
+                        </label>
+
+                        <select id="categoryFilter">
+
+                            <option value="all">
+                                All Categories
+                            </option>
+
+                            <option value="electronics">
+                                Electronics
+                            </option>
+
+                            <option value="documents">
+                                Documents
+                            </option>
+
+                            <option value="wallet">
+                                Wallet / Purse
+                            </option>
+
+                            <option value="keys">
+                                Keys
+                            </option>
+
+                            <option value="books">
+                                Books
+                            </option>
+
+                            <option value="bag">
+                                Bag
+                            </option>
+
+                            <option value="accessories">
+                                Accessories
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= ITEMS LOADED FROM DATABASE ================= -->
+
+                <div
+                    class="items-grid"
+                    id="itemsGrid"
+                >
+
+                    <!-- Items will be loaded dynamically from MongoDB -->
+
+                </div>
+
+
+                <!-- ================= NO RESULTS ================= -->
+
+                <div
+                    id="noResults"
+                    class="no-results"
+                    style="display: none;"
+                >
+
+                    <h2>
+                        No items found
+                    </h2>
+
+                    <p>
+                        Try changing your search or filters.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+
+                    <h3>
+                        Lost & Found Portal
+                    </h3>
+
+                    <p>
+                        Helping people reconnect with their lost belongings.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <p>
+                        © 2026 Lost & Found Portal
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/items.js"></script>
+
+</body>
+
+</html>
