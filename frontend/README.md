@@ -103,8 +103,7 @@ npm run dev
 
 The server will run at:
 
-```
-http://localhost:5000
+https://lost-and-found-items-ygfn.onrender.com
 ```
 
 ### 6. Run the frontend

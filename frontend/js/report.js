@@ -80,8 +80,7 @@ function saveNewItem(newItem) {
 
     console.log("Inside saveNewItem()");
     console.log(newItem);
-
-    fetch("http://localhost:5000/api/items", {
+fetch("https://lost-and-found-items-ygfn.onrender.com/api/items", {
 
         method: "POST",
 

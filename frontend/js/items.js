@@ -24,7 +24,7 @@ async function displaySavedItems() {
 
         itemsGrid.innerHTML = "";
 
-        const response = await fetch("http://localhost:5000/api/items");
+        const response = await fetch("https://lost-and-found-items-ygfn.onrender.com/api/items");
 
         const result = await response.json();
 
@@ -182,9 +182,7 @@ async function viewSavedItem(id) {
 
     try {
 
-        const response = await fetch(
-            `http://localhost:5000/api/items/${id}`
-        );
+        const response = await fetch("https://lost-and-found-items-ygfn.onrender.com/api/items");
 
         const result = await response.json();
 
