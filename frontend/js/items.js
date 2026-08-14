@@ -182,7 +182,9 @@ async function viewSavedItem(id) {
 
     try {
 
-        const response = await fetch("https://lost-and-found-items-ygfn.onrender.com/api/items");
+       const response = await fetch(
+    `https://lost-and-found-items-ygfn.onrender.com/api/items/${id}`
+);
 
         const result = await response.json();
 
@@ -192,7 +194,7 @@ async function viewSavedItem(id) {
 
             "Item: " + item.itemName +
 
-            "\n\nStatus: " + item.type.toUpperCase() +
+            "\n\nStatus: " + (item.type || "").toUpperCase()+
 
             "\n\nCategory: " + item.category +
 
